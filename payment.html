@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Payment - Flight Booking System</title>
+</head>
+<body background="background.jpg">
+    <center>
+        <h1>💳 Payment</h1>
+        <p>Please enter your payment details to complete your booking.</p>
+
+        <form action="confirmation.html" method="POST">
+            <h2>🔹 Payment Details</h2>
+            
+            <label>Cardholder Name:</label><br>
+            <input type="text" name="card_name" placeholder="Enter name on card" required><br><br>
+
+            <label>Card Number:</label><br>
+            <input type="text" name="card_number" placeholder="XXXX XXXX XXXX XXXX" 
+                   pattern="\d{4} \d{4} \d{4} \d{4}" 
+                   maxlength="19" required>
+            <br><br>
+
+            <label>Expiration Date:</label><br>
+            <input type="month" name="expiry_date" required><br><br>
+
+            <label>CVV:</label><br>
+            <input type="password" name="cvv" placeholder="XXX or XXXX" 
+                   pattern="\d{3,4}" maxlength="4" required>
+            <br><br>
+
+            <label>Select Payment Method:</label><br>
+            <input type="radio" name="payment_method" value="credit_card" required> Credit Card 💳<br>
+            <input type="radio" name="payment_method" value="debit_card"> Debit Card 🏦<br>
+            <input type="radio" name="payment_method" value="paypal"> PayPal 🅿️<br><br>
+
+            <button type="submit">✅ Complete Payment</button>
+        </form>
+
+        <br>
+        <a href="meal.html"><button>🔙 Back to Meal Selection</button></a>
+        <a href="index.html"><button>🏠 Back to Home</button></a>
+    </center>
+
+</body>
+</html>

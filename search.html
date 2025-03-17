@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Search Flights - Flight Booking System</title>
+</head>
+<body>
+<body background="background.jpg">
+
+ <center> 
+        <h1>🔍 Search Flights</h1>
+        <h4>Find the best flights at the best prices! Enter your details below to search for available flights. ✈️</h4>
+
+        <form action="results.html" method="GET">
+            <label>🌍 From:</label><br>
+            <input type="text" name="from" placeholder="Enter departure city" required><br><br>
+
+            <label>📍 To:</label><br>
+            <input type="text" name="to" placeholder="Enter destination" required><br><br>
+
+            <label>📅 Date:</label><br>
+            <input type="date" name="date" required><br><br>
+
+            <label>👥 Passengers:</label><br>
+            <input type="number" name="passengers" min="1" value="1" required><br><br>
+
+            <label>💺 Class:</label><br>
+            <select name="class">
+                <option value="economy">Economy</option>
+                <option value="business">Business</option>
+                <option value="first">First Class</option>
+            </select><br><br>
+
+            <button type="submit">🔎 Search Flights</button>
+        </form>
+
+        <br>
+        <a href="index.html"><button>🏠 Back to Home</button></a>
+
+</body>
+</html>

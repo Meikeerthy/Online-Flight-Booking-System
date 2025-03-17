@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Meal Selection - Flight Booking System</title>
+</head>
+<body>
+<body background="background.jpg">
+    <center>
+        <h1>🍽️ Meal Selection</h1>
+        <p>Please select your preferred meal for the flight.</p>
+
+        <form action="payment.html" method="GET">
+            <h2>🥘 Choose Your Meal</h2>
+
+            <table>
+                <tr>
+                    <!-- Vegetarian Meal -->
+                    <td>
+                        <input type="radio" name="meal" value="vegetarian" required>
+                    </td>
+                    <td align="center">
+                        <img src="vegetarian.jpg" width="150" height="150" alt="Vegetarian Meal"><br>
+                        <b>Vegetarian 🥦</b>
+                    </td>
+
+                    <td width="50"></td> <!-- Space between options -->
+
+                    <!-- Non-Vegetarian Meal -->
+                    <td>
+                        <input type="radio" name="meal" value="non-vegetarian">
+                    </td>
+                    <td align="center">
+                        <img src="non-vegetarian.jpg" width="150" height="150" alt="Non-Vegetarian Meal"><br>
+                        <b>Non-Vegetarian 🍗</b>
+                    </td>
+
+                    <td width="50"></td> <!-- Space between options -->
+
+                    <!-- Vegan Meal -->
+                    <td>
+                        <input type="radio" name="meal" value="vegan">
+                    </td>
+                    <td align="center">
+                        <img src="vegan.jpg" width="150" height="150" alt="Vegan Meal"><br>
+                        <b>Vegan 🥗</b>
+                    </td>
+                </tr>
+
+                <tr><td colspan="8"><br></td></tr> <!-- Space between rows -->
+
+                <tr>
+                    <!-- Gluten-Free Meal -->
+                    <td>
+                        <input type="radio" name="meal" value="gluten-free">
+                    </td>
+                    <td align="center">
+                        <img src="gluten-free.jpg" width="150" height="150" alt="Gluten-Free Meal"><br>
+                        <b>Gluten-Free 🍞🚫</b>
+                    </td>
+
+                    <td width="50"></td> <!-- Space between options -->
+
+                    <!-- No Meal Option -->
+                    <td>
+                        <input type="radio" name="meal" value="no-meal">
+                    </td>
+                    <td align="center">
+                        <img src="no-meal.jpg" width="150" height="150" alt="No Meal Option"><br>
+                        <b>No Meal ❌</b>
+                    </td>
+                </tr>
+            </table>
+
+            <br>
+            <button type="submit">➡️ Proceed to Payment</button>
+
+            <br><br>
+        </form>
+
+        <a href="seat.html"><button>🔙 Back to Seat Selection</button></a>
+        <a href="index.html"><button>🏠 Back to Home</button></a>
+
+    </center>
+
+</body>
+</html>
